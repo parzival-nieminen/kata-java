@@ -51,11 +51,11 @@ public class JsonFileDataLoader implements CommandLineRunner {
 
         JsonNode comments = getComments(json);
         comments.forEach(it -> commentRepository.save(objectMapper.convertValue(it, Comment.class)));
-        log.info("Loaded {} comments", posts.size());
+        log.info("Loaded {} comments", comments.size());
 
         JsonNode users = getUsers(json);
         users.forEach(it -> userRepository.save(objectMapper.convertValue(it, User.class)));
-        log.info("Loaded {} users", posts.size());
+        log.info("Loaded {} users", users.size());
     }
 
     private JsonNode getPosts(JsonNode jsonNode) {
