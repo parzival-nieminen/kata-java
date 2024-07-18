@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kata01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kata01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="init projekt with first kata01">
+      <change afterPath="$PROJECT_DIR$/kata01/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kata01/assets/kata01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.Application.executor": "Run",
     "Spring Boot.kata01 Backend.executor": "Run",
     "git-widget-placeholder": "main",
@@ -50,9 +51,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2975",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,6 +62,7 @@
       <recent name="$PROJECT_DIR$/kata01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kata01/assets" />
       <recent name="$PROJECT_DIR$/kata01/src/main/java" />
       <recent name="$PROJECT_DIR$/kata01" />
     </key>
@@ -102,11 +104,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721289651171</updated>
-      <workItem from="1721289652265" duration="2175000" />
+      <workItem from="1721289652265" duration="3774000" />
     </task>
+    <task id="LOCAL-00001" summary="init projekt with first kata01">
+      <option name="closed" value="true" />
+      <created>1721294375570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721294375570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init projekt with first kata01" />
+    <option name="LAST_COMMIT_MESSAGE" value="init projekt with first kata01" />
   </component>
 </project>
