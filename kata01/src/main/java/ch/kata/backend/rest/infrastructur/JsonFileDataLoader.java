@@ -64,15 +64,15 @@ public class JsonFileDataLoader implements CommandLineRunner {
                 .orElseThrow(() -> new IllegalArgumentException("Invalid JSON - posts not found"));
     }
 
-    private JsonNode getUsers(JsonNode jsonNode) {
-        return Optional.ofNullable(jsonNode)
-                .map(j -> j.get("users"))
-                .orElseThrow(() -> new IllegalArgumentException("Invalid JSON - users not found"));
-    }
-
     private JsonNode getComments(JsonNode jsonNode) {
         return Optional.ofNullable(jsonNode)
                 .map(j -> j.get("comments"))
+                .orElseThrow(() -> new IllegalArgumentException("Invalid JSON - comments not found"));
+    }
+
+    private JsonNode getUsers(JsonNode jsonNode) {
+        return Optional.ofNullable(jsonNode)
+                .map(j -> j.get("users"))
                 .orElseThrow(() -> new IllegalArgumentException("Invalid JSON - users not found"));
     }
 
