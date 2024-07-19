@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="update DTO Objects for Post and User&#10;- using Lombok">
+    <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="update UserController for full Endpoint&#10;- add all REST Endpoint for User Object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,7 @@
       <workItem from="1721289652265" duration="18697000" />
       <workItem from="1721334252459" duration="836000" />
       <workItem from="1721335104253" duration="635000" />
-      <workItem from="1721399606448" duration="6414000" />
+      <workItem from="1721399606448" duration="6690000" />
     </task>
     <task id="LOCAL-00001" summary="init projekt with first kata01">
       <option name="closed" value="true" />
@@ -188,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721425557409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update UserController for full Endpoint&#10;- add all REST Endpoint for User Object">
+      <option name="closed" value="true" />
+      <created>1721426316149</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721426316149</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +221,7 @@
     <MESSAGE value="fix log messages&#10;- show correct count numbers" />
     <MESSAGE value="feat full REST Endpoint for Comment&#10;- update DTO Comment object&#10;- using Lombok" />
     <MESSAGE value="update DTO Objects for Post and User&#10;- using Lombok" />
-    <option name="LAST_COMMIT_MESSAGE" value="update DTO Objects for Post and User&#10;- using Lombok" />
+    <MESSAGE value="update UserController for full Endpoint&#10;- add all REST Endpoint for User Object" />
+    <option name="LAST_COMMIT_MESSAGE" value="update UserController for full Endpoint&#10;- add all REST Endpoint for User Object" />
   </component>
 </project>

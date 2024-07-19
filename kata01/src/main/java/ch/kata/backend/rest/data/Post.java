@@ -14,7 +14,6 @@ public class Post {
     @Id
     @Setter(AccessLevel.NONE)
     Long id;
-    @Setter(AccessLevel.NONE)
     Long userId;
     String title;
     String body;
