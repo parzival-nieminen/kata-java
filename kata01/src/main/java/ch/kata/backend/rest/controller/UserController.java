@@ -22,13 +22,13 @@ public class UserController {
     }
 
     @GetMapping
-    public ResponseEntity<List<User>> getAllPost() {
+    public ResponseEntity<List<User>> getAllUsers() {
         return new ResponseEntity<>(userRepository.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping("/{userId}")
-    public ResponseEntity<User> getPost(@PathVariable long userId) {
-        return userRepository.findById(userId)
+    @GetMapping("/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable long id) {
+        return userRepository.findById(id)
                 .map(it -> new ResponseEntity<>(it, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }

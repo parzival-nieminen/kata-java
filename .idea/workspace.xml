@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="fix log messages&#10;- show correct count numbers">
+    <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="feat full REST Endpoint for Comment&#10;- update DTO Comment object&#10;- using Lombok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +141,7 @@
       <workItem from="1721289652265" duration="18697000" />
       <workItem from="1721334252459" duration="836000" />
       <workItem from="1721335104253" duration="635000" />
-      <workItem from="1721399606448" duration="5240000" />
+      <workItem from="1721399606448" duration="5614000" />
     </task>
     <task id="LOCAL-00001" summary="init projekt with first kata01">
       <option name="closed" value="true" />
@@ -173,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721334904814</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat full REST Endpoint for Comment&#10;- update DTO Comment object&#10;- using Lombok">
+      <option name="closed" value="true" />
+      <created>1721425101396</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721425101396</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +205,7 @@
     <MESSAGE value="add READM" />
     <MESSAGE value="feat add REST Endpoint to search with an ID in the database&#10;- Update log message&#10;- add GET by ID method for all 3 controllers" />
     <MESSAGE value="fix log messages&#10;- show correct count numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix log messages&#10;- show correct count numbers" />
+    <MESSAGE value="feat full REST Endpoint for Comment&#10;- update DTO Comment object&#10;- using Lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat full REST Endpoint for Comment&#10;- update DTO Comment object&#10;- using Lombok" />
   </component>
 </project>
