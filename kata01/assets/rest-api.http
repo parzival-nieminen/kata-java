@@ -2,7 +2,29 @@
 ###
 GET http://localhost:8080/api/v1/posts
 ###
-GET http://localhost:8080/api/v1/posts/1
+GET http://localhost:8080/api/v1/posts/101
+###
+POST http://localhost:8080/api/v1/posts
+Content-Type: application/json
+
+{
+  "id": 101,
+  "userId": 42,
+  "title": "My New Post",
+  "body": "This is the content of my new post."
+}
+###
+PUT http://localhost:8080/api/v1/posts/101
+Content-Type: application/json
+
+{
+  "id": 101,
+  "userId": 42,
+  "title": "This is New",
+  "body": "This is the content of my new post"
+}
+###
+DELETE http://localhost:8080/api/v1/posts/2
 
 ### User Request
 ###

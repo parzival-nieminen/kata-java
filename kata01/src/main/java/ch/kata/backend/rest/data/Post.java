@@ -12,7 +12,6 @@ import org.springframework.data.annotation.Version;
 @NoArgsConstructor
 public class Post {
     @Id
-    @Setter(AccessLevel.NONE)
     Long id;
     Long userId;
     String title;
