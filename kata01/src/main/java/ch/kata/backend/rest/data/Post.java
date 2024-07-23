@@ -1,8 +1,7 @@
 package ch.kata.backend.rest.data;
 
+import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
 
 
 @Getter
@@ -10,13 +9,11 @@ import org.springframework.data.annotation.Version;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Post {
-    @Id
-    Long id;
+@Entity
+public class Post extends BaseEntity {
+
     Long userId;
     String title;
+    @Column(columnDefinition = "TEXT")
     String body;
-    @Version
-    @Setter(AccessLevel.NONE)
-    Long version;
 }

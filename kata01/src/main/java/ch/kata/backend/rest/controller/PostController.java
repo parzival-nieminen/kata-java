@@ -43,7 +43,6 @@ public class PostController {
 
         if (optionalPost.isPresent()) {
             Post post = optionalPost.get();
-            post.setId(postDetails.getId());
             post.setTitle(postDetails.getTitle());
             post.setBody(postDetails.getBody());
             post.setUserId(postDetails.getUserId());

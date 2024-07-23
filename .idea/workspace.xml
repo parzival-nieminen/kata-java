@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="update PostController for full Endpoint&#10;- add all REST Endpoint for Post Object&#10;- update Post Object">
-      <change afterPath="$PROJECT_DIR$/kata01/assets/kata01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/assets/rest-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/assets/rest-api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/infrastructur/JsonFileDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/infrastructur/JsonFileDataLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,7 @@
     "HTTP Request.rest-api | #2.executor": "Run",
     "HTTP Request.rest-api | #3.executor": "Run",
     "HTTP Request.rest-api | #4.executor": "Run",
+    "HTTP Request.rest-api | #5.executor": "Run",
     "HTTP Request.rest-api | #6.executor": "Run",
     "HTTP Request.rest-api | Comments Requests.executor": "Run",
     "HTTP Request.rest-api | GET request to example server.executor": "Run",
@@ -56,6 +64,7 @@
     "Maven.backend.rest [package].executor": "Run",
     "Maven.backend.rest [test].executor": "Run",
     "Maven.backend.rest [validate].executor": "Run",
+    "Maven.backend.rest [verify].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -63,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.Application.executor": "Debug",
+    "Spring Boot.Application.executor": "Run",
     "Spring Boot.kata01 Backend.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
@@ -114,7 +123,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" value="local" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="kata01" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ch.kata.backend.rest.Application" />
@@ -132,8 +140,8 @@
       <list>
         <item itemvalue="HTTP Request.rest-api | #2" />
         <item itemvalue="HTTP Request.rest-api | #4" />
-        <item itemvalue="HTTP Request.rest-api | Post Requests" />
         <item itemvalue="HTTP Request.rest-api | #3" />
+        <item itemvalue="HTTP Request.rest-api | Post Requests" />
         <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>

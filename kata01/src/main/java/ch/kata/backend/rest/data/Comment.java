@@ -1,8 +1,8 @@
 package ch.kata.backend.rest.data;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
 
 
 @Getter
@@ -10,18 +10,13 @@ import org.springframework.data.annotation.Version;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Comment {
+@Entity
+public class Comment extends BaseEntity {
 
-    @Id
-    @Setter(AccessLevel.NONE)
-    Long id;
-    @Setter(AccessLevel.NONE)
     Long postId;
     String name;
     String email;
+    @Column(columnDefinition = "TEXT")
     String body;
 
-    @Version
-    @Setter(AccessLevel.NONE)
-    Long version;
 }

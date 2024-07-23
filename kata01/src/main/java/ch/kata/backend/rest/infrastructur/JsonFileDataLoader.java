@@ -1,5 +1,6 @@
 package ch.kata.backend.rest.infrastructur;
 
+import ch.kata.backend.rest.data.BaseEntity;
 import ch.kata.backend.rest.data.Comment;
 import ch.kata.backend.rest.data.Post;
 import ch.kata.backend.rest.data.User;
@@ -46,16 +47,25 @@ public class JsonFileDataLoader implements CommandLineRunner {
         }
 
         JsonNode posts = getPosts(json);
-        posts.forEach(it -> postRepository.save(objectMapper.convertValue(it, Post.class)));
+        posts.forEach(it -> postRepository.save(getEntity(it, Post.class)));
         log.info("Loaded {} posts", posts.size());
 
         JsonNode comments = getComments(json);
-        comments.forEach(it -> commentRepository.save(objectMapper.convertValue(it, Comment.class)));
+        comments.forEach(it -> commentRepository.save(getEntity(it, Comment.class)));
         log.info("Loaded {} comments", comments.size());
 
         JsonNode users = getUsers(json);
-        users.forEach(it -> userRepository.save(objectMapper.convertValue(it, User.class)));
+        users.forEach(it -> userRepository.save(getEntity(it, User.class)));
         log.info("Loaded {} users", users.size());
+    }
+
+
+    private <T extends BaseEntity> T getEntity(JsonNode it, Class<T> clazz) {
+        var entity = objectMapper.convertValue(it, clazz);
+        if (entity.getVersion() == null) {
+            entity.setVersion(1L);
+        }
+        return entity;
     }
 
     private JsonNode getPosts(JsonNode jsonNode) {
