@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f440ef98-919f-43e4-b3cd-3b354a591117" name="Changes" comment="update PostController for full Endpoint&#10;- add all REST Endpoint for Post Object&#10;- update Post Object">
+      <change afterPath="$PROJECT_DIR$/kata01/assets/kata01.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/assets/rest-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/assets/rest-api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/src/main/java/ch/kata/backend/rest/data/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kata01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/kata01/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "HTTP Request.rest-api | #2.executor": "Run",
     "HTTP Request.rest-api | #3.executor": "Run",
     "HTTP Request.rest-api | #4.executor": "Run",
@@ -241,6 +241,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init projekt with first kata01" />
     <MESSAGE value="add READM" />
     <MESSAGE value="feat add REST Endpoint to search with an ID in the database&#10;- Update log message&#10;- add GET by ID method for all 3 controllers" />

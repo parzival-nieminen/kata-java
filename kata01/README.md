@@ -10,4 +10,4 @@ Optional Dependencies are:
 - Lombok
 
 
-![Springboot project setup](assets/kata01.png)
+![Springboot project setup](assets/kata01.jpg)
