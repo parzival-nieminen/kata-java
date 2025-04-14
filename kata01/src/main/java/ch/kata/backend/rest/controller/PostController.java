@@ -45,7 +45,7 @@ public class PostController {
             Post post = optionalPost.get();
             post.setTitle(postDetails.getTitle());
             post.setBody(postDetails.getBody());
-            post.setUserId(postDetails.getUserId());
+            // post.setUserId(postDetails.getUserId());
             Post updatedPost = postRepository.save(post);
             return ResponseEntity.ok(updatedPost);
         } else {

@@ -1,7 +1,6 @@
 package ch.kata.backend.rest.data;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.*;
 
 
@@ -13,7 +12,10 @@ import lombok.*;
 @Entity
 public class Comment extends BaseEntity {
 
-    Long postId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "post_id", nullable = false)
+    private Post post;
+
     String name;
     String email;
     @Column(columnDefinition = "TEXT")

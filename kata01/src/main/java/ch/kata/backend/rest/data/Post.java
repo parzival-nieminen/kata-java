@@ -3,6 +3,8 @@ package ch.kata.backend.rest.data;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 
 @Getter
 @Setter
@@ -12,8 +14,15 @@ import lombok.*;
 @Entity
 public class Post extends BaseEntity {
 
-    Long userId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
     String title;
+
     @Column(columnDefinition = "TEXT")
     String body;
+
+    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Comment> comments;
 }

@@ -16,6 +16,8 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -28,7 +30,8 @@ public class JsonFileDataLoader implements CommandLineRunner {
     ObjectMapper objectMapper;
     PostRepository postRepository;
 
-    public JsonFileDataLoader(ObjectMapper objectMapper, PostRepository postRepository, CommentRepository commentRepository, UserRepository userRepository) {
+    public JsonFileDataLoader(ObjectMapper objectMapper, PostRepository postRepository,
+                              CommentRepository commentRepository, UserRepository userRepository) {
         this.objectMapper = objectMapper;
         this.postRepository = postRepository;
         this.commentRepository = commentRepository;
@@ -47,15 +50,28 @@ public class JsonFileDataLoader implements CommandLineRunner {
         }
 
         JsonNode posts = getPosts(json);
-        posts.forEach(it -> postRepository.save(getEntity(it, Post.class)));
-        log.info("Loaded {} posts", posts.size());
-
+        JsonNode users = getUsers(json);
         JsonNode comments = getComments(json);
-        comments.forEach(it -> commentRepository.save(getEntity(it, Comment.class)));
+
+        List<Post> postList = new ArrayList<>();
+        List<User> userList = new ArrayList<>();
+        List<Comment> commentList = new ArrayList<>();
+
+        posts.forEach(it -> postList.add(getEntity(it, Post.class)));
+        comments.forEach(it -> commentList.add(getEntity(it, Comment.class)));
+        users.forEach(it -> userList.add(getEntity(it, User.class)));
+
+
+
+
+        log.info("Loaded {} posts", postList.size());
+
+        // JsonNode comments = getComments(json);
+        //comments.forEach(it -> commentRepository.save(getEntity(it, Comment.class)));
         log.info("Loaded {} comments", comments.size());
 
-        JsonNode users = getUsers(json);
-        users.forEach(it -> userRepository.save(getEntity(it, User.class)));
+        // JsonNode users = getUsers(json);
+        //users.forEach(it -> userRepository.save(getEntity(it, User.class)));
         log.info("Loaded {} users", users.size());
     }
 
